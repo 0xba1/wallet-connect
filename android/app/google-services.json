@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "657756630904",
+    "project_id": "wallet-connect-df3e4",
+    "storage_bucket": "wallet-connect-df3e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657756630904:android:f7264638bf4a7c73b0228d",
+        "android_client_info": {
+          "package_name": "com.hextools.wallet_connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657756630904-nqhtbffepm4n2ili6fa827ld101pkhb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWPcUT9EGTk9tfETqZxVIx_ZPs1m3mmz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657756630904-nqhtbffepm4n2ili6fa827ld101pkhb9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
