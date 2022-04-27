@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Install apk on android
 
-[Apk](https://github.com/0xba1/wallet-connect/raw/main/apk/app-release.apk)
+[Apk Download](https://github.com/0xba1/wallet-connect/raw/main/apk/app-release.apk)
 
 ## Screenshots
 
