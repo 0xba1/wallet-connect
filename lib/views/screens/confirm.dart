@@ -20,43 +20,52 @@ class ConfirmCode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 75,
-          ),
-          Text(
-            'We’ve sent you a code',
-            style: AppTheme.textTheme.headline1,
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-              left: 24,
-              right: 24,
-              top: 4,
-              bottom: 157,
+    return GestureDetector(
+      onTap: () {
+        final currentFocus = FocusScope.of(context);
+
+        if (!currentFocus.hasPrimaryFocus) {
+          currentFocus.unfocus();
+        }
+      },
+      child: Scaffold(
+        body: Column(
+          children: [
+            const SizedBox(
+              height: 75,
             ),
-            child: Text(
-              'Enter the confirmation code below',
-              style: AppTheme.textTheme.bodyText1?.copyWith(
-                color: Colors.black.withOpacity(0.6),
+            Text(
+              'We’ve sent you a code',
+              style: AppTheme.textTheme.headline1,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                left: 24,
+                right: 24,
+                top: 4,
+                bottom: 157,
+              ),
+              child: Text(
+                'Enter the confirmation code below',
+                style: AppTheme.textTheme.bodyText1?.copyWith(
+                  color: Colors.black.withOpacity(0.6),
+                ),
               ),
             ),
-          ),
-          const OtpTextField(numberOfBoxes: 6),
-          const SizedBox(
-            height: 18,
-          ),
-          const VerificationErrorWidget(),
-          const Timed(),
-          const Expanded(
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: PrivacyPolicy(),
+            const OtpTextField(numberOfBoxes: 6),
+            const SizedBox(
+              height: 18,
             ),
-          ),
-        ],
+            const VerificationErrorWidget(),
+            const Timed(),
+            const Expanded(
+              child: Align(
+                alignment: Alignment.bottomCenter,
+                child: PrivacyPolicy(),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -197,7 +206,7 @@ class _TimedState extends State<Timed> {
       TextSpan(
         children: [
           TextSpan(
-            text: "Didn't receive a code",
+            text: "Didn't receive a code? ",
             style: AppTheme.textTheme.subtitle1?.copyWith(
               color: Colors.black.withOpacity(0.6),
             ),
