@@ -56,6 +56,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
   Widget build(BuildContext context) {
     final authPro = Provider.of<AuthProvider>(context, listen: false);
     return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         OtpBox(controller: controllers.first),
         ...List.generate(
