@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const _primaryColor = Color(0xFFC5FF29);
+const _tertiaryColor = Color(0xFFECECEC);
 
 /// App theme
 /// [AppTheme.light] for light theme
@@ -13,6 +14,7 @@ class AppTheme {
       colorScheme: ColorScheme.fromSeed(
         seedColor: _primaryColor,
         primary: _primaryColor,
+        tertiary: _tertiaryColor,
       ),
       textTheme: GoogleFonts.poppinsTextTheme(textTheme),
       // useMaterial3: true,
@@ -25,6 +27,7 @@ class AppTheme {
       colorScheme: ColorScheme.fromSeed(
         seedColor: _primaryColor,
         primary: _primaryColor,
+        tertiary: _tertiaryColor,
         brightness: Brightness.dark,
       ),
       brightness: Brightness.dark,

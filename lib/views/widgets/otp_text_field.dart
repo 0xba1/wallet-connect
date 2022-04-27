@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:wallet_connect/controllers/auth_provider.dart';
+import 'package:wallet_connect/views/screens/welcome.dart';
 import 'package:wallet_connect/views/widgets/otp_box.dart';
 
 /// {@template otp_field}
@@ -73,7 +74,7 @@ class _OtpTextFieldState extends State<OtpTextField> {
                 // ignore: use_build_context_synchronously
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => const Scaffold()),
+                  MaterialPageRoute(builder: (context) => const Welcome()),
                 ),
               );
             }

@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 /// {@end_template}
 class OtpBox extends StatelessWidget {
   /// {@macro otp_box}
-  const OtpBox(
-      {Key? key,
-      required this.controller,
-      this.autofocus = false,
-      this.onComplete})
-      : super(key: key);
+  const OtpBox({
+    Key? key,
+    required this.controller,
+    this.autofocus = false,
+    this.onComplete,
+  }) : super(key: key);
 
   /// [TextEditingController] for [OtpBox]
   final TextEditingController controller;
@@ -36,7 +36,7 @@ class OtpBox extends StatelessWidget {
           obscureText: true,
           maxLength: 1,
           decoration: InputDecoration(
-            fillColor: const Color(0xFFECECEC),
+            fillColor: Theme.of(context).colorScheme.tertiary,
             filled: true,
             counterText: '',
             border: OutlineInputBorder(
