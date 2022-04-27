@@ -23,9 +23,10 @@ class AppTheme {
   static ThemeData get dark {
     return ThemeData(
       colorScheme: ColorScheme.fromSeed(
-          seedColor: _primaryColor,
-          primary: _primaryColor,
-          brightness: Brightness.dark),
+        seedColor: _primaryColor,
+        primary: _primaryColor,
+        brightness: Brightness.dark,
+      ),
       brightness: Brightness.dark,
       textTheme: GoogleFonts.poppinsTextTheme(textTheme),
       // useMaterial3: true,
