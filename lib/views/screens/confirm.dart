@@ -222,7 +222,10 @@ class _TimedState extends State<Timed> {
               style: AppTheme.textTheme.subtitle1,
               recognizer: TapGestureRecognizer()
                 ..onTap = () async {
+                  await Provider.of<AuthProvider>(context, listen: false)
+                      .submit();
                   unawaited(
+                    // ignore: use_build_context_synchronously
                     Navigator.pushReplacement<void, void>(
                       context,
                       MaterialPageRoute(
